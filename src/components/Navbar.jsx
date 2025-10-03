@@ -1,8 +1,8 @@
-import { Link, useLocation } from 'react-router-dom'
-import './Navbar.css'
+import { Link, useLocation } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <nav className="navbar">
@@ -11,29 +11,37 @@ const Navbar = () => {
           <Link to="/" className="nav-logo">
             <span>Portfolio</span>
           </Link>
-          
+
           <div className="nav-links">
-            <Link 
-              to="/" 
-              className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+            <Link
+              to="/"
+              className={`nav-link ${
+                location.pathname === "/" ? "active" : ""
+              }`}
             >
               Home
             </Link>
-            <Link 
-              to="/about" 
-              className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
+            <Link
+              to="/about"
+              className={`nav-link ${
+                location.pathname === "/about" ? "active" : ""
+              }`}
             >
               About
             </Link>
-            <Link 
-              to="/projects" 
-              className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`}
+            <Link
+              to="/projects"
+              className={`nav-link ${
+                location.pathname === "/projects" ? "active" : ""
+              }`}
             >
               Projects
             </Link>
-            <Link 
-              to="/contact" 
-              className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
+            <Link
+              to="/contact"
+              className={`nav-link ${
+                location.pathname === "/contact" ? "active" : ""
+              }`}
             >
               Contact
             </Link>
@@ -41,7 +49,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
