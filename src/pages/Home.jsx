@@ -1,4 +1,6 @@
-import "./Home.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Home.css';
 
 const Home = () => {
   return (
@@ -16,12 +18,12 @@ const Home = () => {
               where you can explore my journey and projects.
             </p>
             <div className="hero-buttons">
-              <a href="#about" className="btn btn-primary">
+              <Link to="/about" className="btn btn-primary">
                 About Me
-              </a>
-              <a href="#projects" className="btn btn-secondary">
+              </Link>
+              <Link to="/projects" className="btn btn-secondary">
                 View Projects
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hero-image">

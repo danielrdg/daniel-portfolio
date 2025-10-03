@@ -8,7 +8,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/daniel-portfolio">
       <div className="App">
         <Navbar />
         <main>

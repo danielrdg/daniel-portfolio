@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Projects.css";
 
 const Projects = () => {
@@ -113,9 +115,9 @@ const Projects = () => {
             >
               GitHub Profile
             </a>
-            <a href="#contact" className="btn btn-secondary">
+            <Link to="/contact" className="btn btn-secondary">
               Let's Collaborate
-            </a>
+            </Link>
           </div>
         </div>
       </div>

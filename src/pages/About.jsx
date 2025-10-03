@@ -1,4 +1,6 @@
-import "./About.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './About.css';
 
 const About = () => {
   return (
@@ -100,9 +102,9 @@ const About = () => {
             I'm always open to discussing new opportunities and interesting
             projects.
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <Link to="/contact" className="btn btn-primary">
             Get In Touch
-          </a>
+          </Link>
         </div>
       </div>
     </div>
