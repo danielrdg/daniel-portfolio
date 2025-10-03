@@ -1,15 +1,17 @@
 .home {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 80px; /* Account for navbar */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .home-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
   width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 2rem;
 }
 
 .hero-section {
@@ -569,27 +571,27 @@
     width: 300px;
     height: 300px;
   }
-  
+
   .profile-avatar {
     width: 150px;
     height: 150px;
   }
-  
+
   .avatar-emoji {
     font-size: 3rem;
   }
-  
+
   .code-snippet {
     font-size: 0.7rem;
     padding: 6px 8px;
   }
-  
+
   .tech-orbit {
     width: 250px;
     height: 250px;
     margin: -125px 0 0 -125px;
   }
-  
+
   .orbit-item {
     width: 30px;
     height: 30px;
