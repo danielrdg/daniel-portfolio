@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
@@ -8,7 +8,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <Router basename="/daniel-portfolio">
+    <Router>
       <div className="App">
         <Navbar />
         <main>
